@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheeot</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0a0a0a;
+      --fg: #e8e8e8;
+      --muted: #888;
+      --accent: #c8ff00;
+      --section-gap: 6rem;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    /* Nav */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--fg); }
+
+    /* Sections */
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Hero */
+    #hero { min-height: 100vh; }
+
+    #hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    #hero h1 span { color: var(--accent); }
+
+    #hero p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 540px;
+      margin-bottom: 2rem;
+    }
+
+    /* About */
+    #about h2,
+    #vision h2,
+    #services h2,
+    #contact h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    #about p,
+    #vision p,
+    #contact p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .service-card {
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      transition: border-color 0.2s;
+    }
+
+    .service-card:hover { border-color: var(--accent); }
+
+    .service-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* Contact */
+    #contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    #contact a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      nav ul { gap: 1rem; }
+      section { padding: 5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#hero" class="logo">SHEEOT</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <h1>We build <span>digital experiences</span> that matter.</h1>
+    <p>Sheeot is a creative studio crafting web experiences and interactive entertainment. We're just getting started.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Sheeot is a digital studio focused on building polished web products and games. We combine design sensibility with technical execution to create things people actually enjoy using.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <p>We believe great software should feel intentional. Our goal is to bridge the gap between beautiful design and solid engineering &mdash; shipping products that are both a joy to look at and a joy to use. We're building a studio where craft comes first.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Custom websites, web apps, and landing pages built with modern technologies.</p>
+      </div>
+      <div class="service-card">
+        <h3>Game Development</h3>
+        <p>Interactive games and entertainment experiences for web and beyond.</p>
+      </div>
+      <div class="service-card">
+        <h3>Design &amp; Branding</h3>
+        <p>Visual identity, UI/UX design, and creative direction for digital products.</p>
+      </div>
+      <div class="service-card">
+        <h3>Showcase Projects</h3>
+        <p>Experimental projects and prototypes that push creative boundaries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Interested in working together? Reach out at <a href="mailto:hello@sheeot.com">hello@sheeot.com</a></p>
+  </section>
+
+  <footer>&copy; 2026 Sheeot. All rights reserved.</footer>
+
+</body>
+</html>
