@@ -15,7 +15,7 @@ cd /path/to/this/directory
 git init
 git add .
 git commit -m "Initial landing page"
-git remote add origin git@github.com:sheeot/landing.git
+git remote add origin git@github.com:sheeot-studio/landing.git
 git branch -M main
 git push -u origin main
 ```
@@ -47,7 +47,7 @@ For an apex domain (`sheeot.com`), add **A records** pointing to GitHub's IPs:
 For a `www` subdomain, add a **CNAME record**:
 
 ```
-www  →  sheeot.github.io
+www  →  sheeot-studio.github.io
 ```
 
 ### 5. Add a CNAME file
