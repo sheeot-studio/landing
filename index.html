@@ -138,6 +138,59 @@
       color: var(--muted);
     }
 
+    /* Projects */
+    #projects h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      transition: border-color 0.2s;
+    }
+
+    .project-card:hover { border-color: var(--accent); }
+
+    .project-card h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+
+    .project-card .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.2em 0.6em;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+
+    .tag.live { background: #1a3a1a; color: #4ade80; }
+    .tag.coming { background: #3a2e1a; color: #fbbf24; }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .project-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .project-card a:hover { text-decoration: underline; }
+
     /* Contact */
     #contact a {
       color: var(--accent);
@@ -169,6 +222,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#vision">Vision</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -206,6 +260,23 @@
       <div class="service-card">
         <h3>Showcase Projects</h3>
         <p>Experimental projects and prototypes that push creative boundaries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Pocket Snail</h3>
+        <span class="tag live">Live</span>
+        <p>A chill, casual game available on Google Play. Raise and care for your very own pocket snail.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.ChillOtters.PocketSnail&hl=en_US" target="_blank" rel="noopener">View on Google Play &rarr;</a>
+      </div>
+      <div class="project-card">
+        <h3>Movie Collection</h3>
+        <span class="tag coming">Coming Soon</span>
+        <p>A web app for browsing and organizing your personal movie collection.</p>
       </div>
     </div>
   </section>
