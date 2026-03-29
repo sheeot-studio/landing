@@ -3,7 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sheeot</title>
+  <title>Sheeot — Digital Studio for Web & Game Development</title>
+  <meta name="description" content="Sheeot is a creative digital studio based in the US, building polished web experiences, games, and interactive entertainment. Design meets engineering.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sheeot.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sheeot.com/">
+  <meta property="og:title" content="Sheeot — Digital Studio for Web & Game Development">
+  <meta property="og:description" content="Creative studio crafting web experiences and interactive entertainment. Design meets engineering.">
+  <meta property="og:site_name" content="Sheeot">
+  <meta property="og:image" content="https://sheeot.com/sheeot.png">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sheeot — Digital Studio for Web & Game Development">
+  <meta name="twitter:description" content="Creative studio crafting web experiences and interactive entertainment. Design meets engineering.">
+  <meta name="twitter:image" content="https://sheeot.com/sheeot.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="sheeot.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sheeot",
+    "url": "https://sheeot.com",
+    "email": "hello@sheeot.com",
+    "description": "A creative digital studio building polished web products and games.",
+    "areaServed": "US",
+    "serviceType": ["Web Development", "Game Development", "Design & Branding"]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -44,6 +81,13 @@
       letter-spacing: 0.05em;
       color: var(--accent);
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    nav .logo img {
+      filter: invert(1);
     }
 
     nav ul {
@@ -217,7 +261,7 @@
 <body>
 
   <nav>
-    <a href="#hero" class="logo">SHEEOT</a>
+    <a href="#hero" class="logo"><img src="sheeot.png" alt="Sheeot logo" width="24" height="24"> SHEEOT</a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#vision">Vision</a></li>
