@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sheeot — Digital Studio for Web & Game Development</title>
-  <meta name="description" content="Sheeot is a creative digital studio based in the US, building polished web experiences, games, and interactive entertainment. Design meets engineering.">
+  <meta name="description"
+    content="Sheeot is a creative digital studio based in the US, building polished web experiences, games, and interactive entertainment. Design meets engineering.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sheeot.com/">
 
@@ -12,7 +14,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sheeot.com/">
   <meta property="og:title" content="Sheeot — Digital Studio for Web & Game Development">
-  <meta property="og:description" content="Creative studio crafting web experiences and interactive entertainment. Design meets engineering.">
+  <meta property="og:description"
+    content="Creative studio crafting web experiences and interactive entertainment. Design meets engineering.">
   <meta property="og:site_name" content="Sheeot">
   <meta property="og:image" content="https://sheeot.com/sheeot.png">
   <meta property="og:image:width" content="200">
@@ -21,7 +24,8 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Sheeot — Digital Studio for Web & Game Development">
-  <meta name="twitter:description" content="Creative studio crafting web experiences and interactive entertainment. Design meets engineering.">
+  <meta name="twitter:description"
+    content="Creative studio crafting web experiences and interactive entertainment. Design meets engineering.">
   <meta name="twitter:image" content="https://sheeot.com/sheeot.png">
 
   <!-- Favicon -->
@@ -42,7 +46,13 @@
   </script>
 
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     :root {
       --bg: #0a0a0a;
@@ -52,7 +62,9 @@
       --section-gap: 6rem;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -70,7 +82,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.25rem 2rem;
-      background: rgba(10,10,10,0.85);
+      background: rgba(10, 10, 10, 0.85);
       backdrop-filter: blur(10px);
       z-index: 100;
     }
@@ -103,7 +115,9 @@
       transition: color 0.2s;
     }
 
-    nav a:hover { color: var(--fg); }
+    nav a:hover {
+      color: var(--fg);
+    }
 
     /* Sections */
     section {
@@ -117,7 +131,9 @@
     }
 
     /* Hero */
-    #hero { min-height: 100vh; }
+    #hero {
+      min-height: 100vh;
+    }
 
     #hero h1 {
       font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -126,7 +142,9 @@
       margin-bottom: 1.5rem;
     }
 
-    #hero h1 span { color: var(--accent); }
+    #hero h1 span {
+      color: var(--accent);
+    }
 
     #hero p {
       font-size: 1.15rem;
@@ -170,7 +188,9 @@
       transition: border-color 0.2s;
     }
 
-    .service-card:hover { border-color: var(--accent); }
+    .service-card:hover {
+      border-color: var(--accent);
+    }
 
     .service-card h3 {
       font-size: 1.15rem;
@@ -204,9 +224,14 @@
       transition: border-color 0.2s;
     }
 
-    .project-card:hover { border-color: var(--accent); }
+    .project-card:hover {
+      border-color: var(--accent);
+    }
 
-    .project-card h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+    .project-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
 
     .project-card .tag {
       display: inline-block;
@@ -218,8 +243,15 @@
       margin-bottom: 0.75rem;
     }
 
-    .tag.live { background: #1a3a1a; color: #4ade80; }
-    .tag.coming { background: #3a2e1a; color: #fbbf24; }
+    .tag.live {
+      background: #1a3a1a;
+      color: #4ade80;
+    }
+
+    .tag.coming {
+      background: #3a2e1a;
+      color: #fbbf24;
+    }
 
     .project-card p {
       font-size: 0.9rem;
@@ -233,7 +265,9 @@
       font-size: 0.85rem;
     }
 
-    .project-card a:hover { text-decoration: underline; }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
 
     /* Contact */
     #contact a {
@@ -241,7 +275,9 @@
       text-decoration: none;
     }
 
-    #contact a:hover { text-decoration: underline; }
+    #contact a:hover {
+      text-decoration: underline;
+    }
 
     /* Footer */
     footer {
@@ -253,11 +289,17 @@
 
     /* Mobile */
     @media (max-width: 600px) {
-      nav ul { gap: 1rem; }
-      section { padding: 5rem 1.25rem; }
+      nav ul {
+        gap: 1rem;
+      }
+
+      section {
+        padding: 5rem 1.25rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -273,17 +315,21 @@
 
   <section id="hero">
     <h1>We build <span>digital experiences</span> that matter.</h1>
-    <p>Sheeot is a creative studio crafting web experiences and interactive entertainment. We're just getting started.</p>
+    <p>Sheeot is a creative studio crafting web experiences and interactive entertainment. We're just getting started.
+    </p>
   </section>
 
   <section id="about">
     <h2>About</h2>
-    <p>Sheeot is a digital studio based in the United States, focused on building polished web products and games. We combine design sensibility with technical execution to create things people actually enjoy using.</p>
+    <p>Sheeot is a digital studio based in the United States, focused on building polished web products and games. We
+      combine design sensibility with technical execution to create things people actually enjoy using.</p>
   </section>
 
   <section id="vision">
     <h2>Vision</h2>
-    <p>We believe great software should feel intentional. Our goal is to bridge the gap between beautiful design and solid engineering &mdash; shipping products that are both a joy to look at and a joy to use. We're building a studio where craft comes first.</p>
+    <p>We believe great software should feel intentional. Our goal is to bridge the gap between beautiful design and
+      solid engineering &mdash; shipping products that are both a joy to look at and a joy to use. We're building a
+      studio where craft comes first.</p>
   </section>
 
   <section id="services">
@@ -294,16 +340,16 @@
         <p>Custom websites, web apps, and landing pages built with modern technologies.</p>
       </div>
       <div class="service-card">
+        <h3>Mobile App Development</h3>
+        <p>Native and cross-platform mobile apps designed for performance and great user experience.</p>
+      </div>
+      <div class="service-card">
         <h3>Game Development</h3>
         <p>Interactive games and entertainment experiences for web and beyond.</p>
       </div>
       <div class="service-card">
         <h3>Design &amp; Branding</h3>
         <p>Visual identity, UI/UX design, and creative direction for digital products.</p>
-      </div>
-      <div class="service-card">
-        <h3>Mobile App Development</h3>
-        <p>Native and cross-platform mobile apps designed for performance and great user experience.</p>
       </div>
     </div>
   </section>
@@ -315,12 +361,14 @@
         <h3>Pocket Snail</h3>
         <span class="tag live">Live</span>
         <p>A chill, casual game available on Google Play. Raise and care for your very own pocket snail.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.ChillOtters.PocketSnail&hl=en_US" target="_blank" rel="noopener">View on Google Play &rarr;</a>
+        <a href="https://play.google.com/store/apps/details?id=com.ChillOtters.PocketSnail&hl=en_US" target="_blank"
+          rel="noopener">View on Google Play &rarr;</a>
       </div>
       <div class="project-card">
         <h3>Popcorn Zaru</h3>
         <span class="tag live">Live</span>
-        <p>Discover movies and shows, build collections worth bragging about, and geek out with fellow fans over what to watch next.</p>
+        <p>Discover movies and shows, build collections worth bragging about, and geek out with fellow fans over what to
+          watch next.</p>
         <a href="https://popcornzaru.com" target="_blank" rel="noopener">Visit Popcorn Zaru &rarr;</a>
       </div>
     </div>
@@ -334,4 +382,5 @@
   <footer>&copy; 2026 Sheeot. All rights reserved.</footer>
 
 </body>
+
 </html>
